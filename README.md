@@ -59,13 +59,13 @@ graph TB
         k("kubectl/kind")
         c("colima")
         subgraph vm0["mgmt (VM)"]
-            k0["cluster0 (K8s)"]
+            k0["kind-mgmt (K8s)"]
         end
         subgraph vm1["cluster1 (VM)"]
-            k1["cluster1 (K8s)"]
+            k1["kind-cluster1 (K8s)"]
         end
         subgraph vm2["cluster2 (VM)"]
-            k2["cluster2 (K8s)"]
+            k2["kind-cluster2 (K8s)"]
         end
         c-->vm0
         c-->vm1
