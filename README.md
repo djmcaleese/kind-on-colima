@@ -15,7 +15,7 @@ graph TB
     subgraph host["macOS (Host)"]
         k("kubectl")
         c("colima")
-        subgraph vm0["mgmt (VM)"]
+        subgraph vm0["cluster0 (VM)"]
             k0["cluster0 (K8s)"]
         end
         subgraph vm1["cluster1 (VM)"]
